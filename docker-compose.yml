@@ -1,0 +1,32 @@
+services:
+  servidor:
+    build: ./servidor
+    container_name: pg-servidor
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: redes2026      # cambiar si quieren otra clave
+    networks:
+      red-psql:
+        ipv4_address: 172.28.0.10
+
+  cliente:
+    build: ./cliente
+    container_name: pg-cliente
+    depends_on:
+      - servidor
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./capturas:/capturas            # aquí quedan los .pcap generados con tcpdump
+    networks:
+      red-psql:
+        ipv4_address: 172.28.0.20
+
+networks:
+  red-psql:
+    driver: bridge
+    driver_opts:
+      com.docker.network.bridge.name: br-psql   # nombre fijo de la interfaz para Wireshark (Linux)
+    ipam:
+      config:
+        - subnet: 172.28.0.0/24
