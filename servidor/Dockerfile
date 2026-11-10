@@ -1,10 +1,9 @@
-# ============================================================
 # Servidor PostgreSQL compilado desde su código fuente
 # (repositorio oficial: https://github.com/postgres/postgres)
-# ============================================================
+
 FROM debian:bookworm-slim
 
-# Rama o tag a compilar. Para fijar una versión exacta usa un tag (ej. REL_17_x)
+# Rama o tag a compilar. Para fijar una versión exacta usa un tag
 ARG PG_BRANCH=REL_17_STABLE
 
 ENV LANG=C.UTF-8 \
