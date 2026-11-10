@@ -1,7 +1,7 @@
-# ============================================================
+
 # Cliente pgcli instalado desde su código fuente
 # (repositorio oficial: https://github.com/dbcli/pgcli)
-# ============================================================
+
 FROM python:3.12-slim-bookworm
 
 # Rama o tag a instalar. Para fijar versión usa un tag de release del repo.
