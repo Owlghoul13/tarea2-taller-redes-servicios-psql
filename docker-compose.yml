@@ -4,7 +4,7 @@ services:
     container_name: pg-servidor
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: redes2026      # cambiar si quieren otra clave
+      POSTGRES_PASSWORD: redes2026      
     networks:
       red-psql:
         ipv4_address: 172.28.0.10
