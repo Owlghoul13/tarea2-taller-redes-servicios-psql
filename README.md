@@ -105,10 +105,7 @@ Se identificaron diez tipos de tráfico:
 El detalle de cada uno, con su origen y su destino, está en el informe.
 
 ## Video de demostración
-
-> Pendiente: pegar aquí el enlace del video de YouTube. Reemplazar `VIDEO_ID` por el identificador del video (lo que va después de `v=` en la dirección).
-
-[![Video de demostración](https://img.youtube.com/vi/VIDEO_ID/hqdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
+[![Video de demostración](https://youtu.be/23vwIsmVf8c)
 
 ## Informe
 
