@@ -105,7 +105,7 @@ Se identificaron diez tipos de tráfico:
 El detalle de cada uno, con su origen y su destino, está en el informe.
 
 ## Video de demostración
-[![Video de demostración](https://youtu.be/23vwIsmVf8c)
+https://youtu.be/23vwIsmVf8c
 
 ## Informe
 
